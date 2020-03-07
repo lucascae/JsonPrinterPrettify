@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<section class="container fullHeight">
+	<div class="item item-input bg-2 p25">
+		<div class="header">
+			<h1>JSON Viewer</h1>
+			<small>Insira um Json válido abaixo</small>
+		</div>
+		<form [formGroup]="jsonForm">
+			<textarea class="text-white" name="" formControlName="inputJson" type="" value=""></textarea>
+		</form>
+		<button class="btnPrettify flex-end" (click)="prettify()">Prettify</button>
+	</div>
+	<div class="item item-result bg-3 p25">
+		<pre id="preJson"></pre>
+	</div>
+</section>
